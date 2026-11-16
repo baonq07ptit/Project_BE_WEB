@@ -1,0 +1,1 @@
+﻿// Schema validate cho auth

@@ -1,0 +1,1 @@
+// Node validateDraft của agent

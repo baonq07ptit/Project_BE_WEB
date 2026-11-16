@@ -1,0 +1,1 @@
+// Node extractReceipt của agent

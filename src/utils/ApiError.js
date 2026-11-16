@@ -1,0 +1,34 @@
+// Lỗi HTTP kèm status code; được bắt bởi middleware xử lý lỗi trung tâm.
+export default class ApiError extends Error {
+  constructor(
+    statusCode,
+    message,
+    { errors = undefined, isOperational = true } = {},
+  ) {
+    super(message);
+    this.statusCode = statusCode;
+    this.errors = errors;
+    this.isOperational = isOperational;
+    Error.captureStackTrace(this, this.constructor);
+  }
+
+  static badRequest(message = "Bad request", errors) {
+    return new ApiError(400, message, { errors });
+  }
+
+  static unauthorized(message = "Unauthorized") {
+    return new ApiError(401, message);
+  }
+
+  static forbidden(message = "Forbidden") {
+    return new ApiError(403, message);
+  }
+
+  static notFound(message = "Not found") {
+    return new ApiError(404, message);
+  }
+
+  static conflict(message = "Conflict") {
+    return new ApiError(409, message);
+  }
+}

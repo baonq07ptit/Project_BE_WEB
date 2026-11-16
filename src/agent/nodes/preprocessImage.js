@@ -1,0 +1,1 @@
+// Node preprocessImage của agent
