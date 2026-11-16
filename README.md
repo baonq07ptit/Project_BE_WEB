@@ -4,6 +4,7 @@
 [![Express Version](https://img.shields.io/badge/express-%5E4.19.2-blue.svg)](https://expressjs.com/)
 [![MongoDB Mongoose](https://img.shields.io/badge/mongoose-%5E8.5.1-emerald.svg)](https://mongoosejs.com/)
 [![Validation](https://img.shields.io/badge/validation-celebrate%20%26%20joi-orange.svg)](https://github.com/arb/celebrate)
+[![Testing: Vitest](https://img.shields.io/badge/tested_with-vitest%203.2-729B1B.svg)](https://vitest.dev/)
 [![Code Style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](./LICENSE)
 
@@ -44,7 +45,7 @@ Quản lý tài chính cá nhân thường gặp trở ngại do việc nhập l
 | **Database**        | MongoDB & Mongoose (`^8.5.1`)                                            | CSDL NoSQL định hướng tài liệu, quản lý schema chặt chẽ                      |
 | **Data Validation** | Celebrate & Joi                                                          | Middleware kiểm thực dữ liệu đầu vào (Header, Body, Query, Params)           |
 | **Security & Auth** | JWT (`jsonwebtoken`), `bcryptjs`, `helmet`, `cors`, `express-rate-limit` | Xác thực stateless, mã hóa mật khẩu, bảo mật HTTP headers, chống brute-force |
-| **Testing**         | Vitest (`^4.1.10`)                                                       | Unit test và integration test với hiệu năng cao                              |
+| **Testing**         | Vitest (`^3.2.7`)                                                        | Unit test và integration test với hiệu năng cao                              |
 | **Code Quality**    | ESLint (Flat Config), Prettier, Husky, Commitlint                        | Tự động hóa kiểm tra chuẩn code và định dạng commit message                  |
 
 ---
